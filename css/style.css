@@ -1,0 +1,430 @@
+body {
+    --black: #393636;
+    --white: #FFFFFF;
+    /* --white1: #FCFCFC; */
+    --white2: #F5F6F7;
+    /* --white2: #f6f5f7; */
+    --accent: #79091b;
+
+
+    background-color: var(--white);
+    color: var(--black);
+    width: 100%;
+    margin: auto;
+    font-family: YuGothic, 'Yu Gothic', sans-serif;
+    position: relative;
+}
+
+header, footer, h2, h3, .kyoutyou, .viewmore, .accent_mincho, #nav a, #works_list2 a {
+    font-family: 'Yu Mincho Light', 'YuMincho', 'Yu Mincho', '游明朝体', 'ヒラギノ明朝 ProN', 'Hiragino Mincho ProN', sans-serif;
+}
+
+.gothic, #h3_ruby{
+    font-family: YuGothic, 'Yu Gothic', sans-serif;
+}
+
+#h3_ruby {
+    font-weight: normal;
+    font-size: smaller;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin: 0px;
+    margin-top: 30px;
+    padding: 0px;
+}
+
+h4{
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+
+p {
+    margin: 30px auto;
+}
+
+table {
+    text-align: left;
+}
+
+/* ------------------------------
+ *        ヘッダー
+ *--------------------------------*/
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--white);
+    padding: 15px 10px;
+    padding-left: 20px;
+    top: 0px;
+    box-shadow: 0px -10px 15px #6d6e6f;
+}
+
+header a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+#nav {
+    position: absolute;
+    right: 0px;
+}
+
+#nav ul {
+    display: flex;
+    padding: auto 30px;
+}
+
+#nav li {
+    margin: auto 10px;
+}
+
+#nav a {
+    text-decoration: none;
+    color: var(--black);
+    padding: auto 15px;
+}
+
+#nav a:hover {
+    color: var(--accent);
+}
+
+#nav li:hover {
+    text-decoration: underline;
+}
+
+
+
+/* ------ ナビゲーションバー ------ */
+#nav-drawer {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.nav-unshown {
+    /*チェックボックス非表示*/
+    display: none;
+}
+
+#nav-drawer ul li {
+    display: inline;
+    margin: 0 1em;
+    list-style: none;
+}
+
+/* ------------------------------
+ *        メインコンテンツ
+ *--------------------------------*/
+main {
+    margin-top: 30px;
+    position: relative;
+}
+
+/* ------------トップページ------------ */
+.header_img {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* vire more ボタン */
+.viewmore {
+    background-color: var(--accent);
+    color: var(--white);
+    padding: 10px 50px 10px 40px;
+}
+
+.viewmore::after {
+    content: '';
+    position: absolute;
+    padding: 0;
+    width: 0px;
+    height: 0px;
+    font-size: 0px;
+    border: 6px solid var(--white);
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    margin: 0 auto;
+    margin-left: 11px;
+    transform: translateY(7px);
+}
+
+.viewmore:hover {
+    background-color: #53383d;
+}
+
+
+/* 細かい部分の調整 */
+.kyoutyou {
+    font-size: large;
+    font-weight: bolder;
+    color: var(--accent);
+}
+
+
+
+.bg_color2 {
+    background-color: var(--white2);
+
+}
+
+/* 各要素のマージン等 */
+#h_profile, #h_works, #h_contact {
+    padding: 50px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+}
+
+
+#h_works, #h_contact {
+    text-align: center;
+}
+
+#works_list {
+    margin: 60px auto;
+}
+
+#works_list img {
+    width: 30%;
+}
+
+
+.mail {
+    display: none;
+}
+
+.accent, .accent_mincho {
+    color: var(--accent);
+}
+
+
+/* ---------PROFILEページ----------- */
+
+#two_column {
+    /*横２列に配置*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+
+}
+
+
+#left, #right {
+    margin: 10px;
+}
+
+.profile_t {
+    margin: 20px 0px 50px 0px;
+}
+
+.profile_t th {
+    font-weight: normal;
+    min-width: 80px;
+}
+
+.profile_t td {
+    padding: 5px 5px;
+    padding-left: 20px;
+    min-width: 90px;
+}
+
+.organize {
+    padding: 50px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+}
+
+
+/* ----------WORKSページ------------- */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* --- サイドバー --- */
+#works_list2 {
+    max-width: 50%;
+    position: fixed;
+    padding: 40px;
+    background-color: none;
+    z-index: 100;
+    margin-top: 14px;
+}
+
+#works_list2 li {
+    padding: 5px;
+}
+
+#works_list2 a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+#works_list2 a:hover {
+    color: hsl(240, 1%, 70%);
+}
+
+/* ---作品一覧--- */
+#works_thumbnail {
+    margin-top: -140px;
+}
+
+#works_thumbnail h3 {
+    margin: 100px auto 30px auto;
+}
+
+#works_thmbnail a:hover{
+    cursor: pointer;
+}
+
+
+.works_large {
+    width: 80%;
+
+}
+
+.works_small {
+    max-width: 80%;
+}
+
+.works_small img {
+    max-width: 30%;
+}
+
+.goRight {
+    position: relative;
+    left: 250px;
+    width: 80%;
+}
+
+/* ---------作品詳細ページ----------- */
+.detail_img{
+    max-width: 80%;
+    margin-top: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
+}
+
+.organize_detail{
+    padding: 20px;
+    width: 100%;
+}
+
+/* table要素 */
+.detail_t{
+    margin: 0px 0px 0px 0px;
+    max-width: 80%;
+}
+
+
+.detail_t th {
+    font-weight: normal;
+    min-width: 80px;
+}
+
+.detail_t td {
+    padding: 10px 8px;
+    padding-left: 20px;
+    min-width: 90px;
+}
+
+.detail_t a:hover{
+    color: var(--accent);
+}
+
+/***スクロールトップボタン***/
+
+.button {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 50px;
+    color: var(--white);
+    background: var(--black);
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: .3s;
+    margin-right: 15px;
+    margin-bottom: 140px;
+
+    /*デフォルトで非表示にする*/
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99;
+}
+
+/*このクラスが付与されると表示する*/
+.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.material-symbols-outlined{
+    position: absolute;
+    font-size: 50px;
+    left: 0px;
+    top: 0px;
+}
+
+/***スクロールトップボタンここまで***/
+
+
+/* ---------------------------
+ *           フッター 
+ ---------------------------*/
+footer {
+    width: 100%;
+    background-color: #595b5f;
+    color: var(--white);
+    text-align: center;
+    font-size: small;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 25px 0px 5px 0px;
+}
+
+footer p {
+    margin-bottom: 0px;
+    margin-top: 17px;
+}
+
+footer a {
+    color: transparent;
+}
+
+.icon_g, .icon_w {
+    height: 50px;
+    max-height: 10%;
+    vertical-align: middle;
+    margin: 10px 5px 10px 5px;
+}
+
+.youso {
+    /*CONTACT専用マージン*/
+    margin: 60px auto;
+    padding-bottom: 40px;
+}

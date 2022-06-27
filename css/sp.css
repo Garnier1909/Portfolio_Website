@@ -1,0 +1,279 @@
+body {
+    text-align: center;
+}
+
+
+h3{
+    margin-top: 50px;
+}
+
+/* ハンバーガーメニュー */
+header {
+    padding-bottom: 16px;
+}
+
+header ul {
+    line-height: 60px;
+}
+
+#nav-drawer {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+/*チェックボックスの非表示*/
+.nav-unshown {
+    display: none;
+}
+
+/*三本線アイコンのスペース*/
+#nav-open {
+    display: inline-block;
+    cursor: pointer;
+    width: 40px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+/*三本線アイコン*/
+#nav-open span,
+#nav-open span:before,
+#nav-open span:after {
+    position: absolute;
+    height: 2px;
+    /*三本線の太さ*/
+    width: 40px;
+    /*三本線の長さ*/
+    border-radius: 3px;
+    background: var(--black);
+    content: '';
+    right: 10px;
+}
+
+#nav-open span:before {
+    /*二本目の位置*/
+    bottom: -12px;
+    right: 0px;
+}
+
+#nav-open span:after {
+    /*三本目の位置*/
+    bottom: -24px;
+    right: 0px;
+}
+
+/*閉じる用の薄黒箇所*/
+#nav-close {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--black);
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+/* #nav-close ::before{
+    font-size: 85px;
+    font-weight: light;
+    color: var(--black);
+    content: '×';
+    position: absolute;
+    top: 10px;
+    left: 0px;
+} */
+
+/*メニューの中身*/
+#nav {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    max-width: 300px;
+    /*最大幅（調整する）*/
+    height: 100%;
+    background: var(--white);
+    transition: .3s ease-in-out;
+    -webkit-transform: translateX(105%);
+    transform: translateX(105%);
+}
+
+
+#nav ul {
+    display: block;
+    width: 90%;
+    margin-top: 80%;
+    padding-left: 25px;
+}
+
+
+/*チェックがついたら表示させる*/
+#nav-input:checked~#nav-close {
+    display: block;
+    opacity: .5;
+}
+
+#nav-input:checked~#nav {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    box-shadow: 6px 0 25px rgba(0, 0, 0, .15);
+}
+
+
+/* --------------------------------
+ *          メインコンテンツ
+ *--------------------------------*/
+main{
+    margin-top: 57px;
+}
+
+
+ #h_profile, #h_works, #h_contact {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.organize{
+    padding-left: 23px;
+    padding-right: 23px;
+
+}
+
+.youso {/*CONTACT専用マージン*/
+    margin: 40px auto 60px auto;
+}
+
+.viewmore{
+    width: 90%;
+}
+
+
+/* 分割要素・改行など */
+#two_column {
+    /*横２列に配置*/
+    display: flex;
+    display: block;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.br {
+    content:'';
+    visibility:hidden;
+    display: block;
+}
+
+
+
+/* PROFILEページ */
+
+#works_list img {
+    width: 90%;
+    margin-bottom: 5px;
+}
+
+.profile_t {
+    margin: 30px 0px 50px 0px;
+}
+
+.profile_t td {
+    padding: 0px 0px;
+    padding-left: 20px;
+}
+
+/* WORKSページ */
+.goRight {/*作品一覧を右寄りから中央へ*/
+    position: relative;
+    left: 0px;
+    width: 100%;
+}
+
+/* --- サイドバー --- */
+.container {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#works_list{
+    margin-top: 40px;
+}
+
+#works_list ul{
+    flex-wrap: wrap;
+}
+
+#works_list2 {
+    position: static;
+    padding: 10px;
+    background-color: none;
+    z-index: 10;
+    margin-top: 14px;
+    text-align:justify;
+}
+
+#works_list2 li {
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+#works_thumbnail {
+    margin-top: -50px;
+}
+
+#works_thumbnail h3 {
+    margin: 0px auto 40px auto;
+}
+
+
+#works_thumbnail img {
+    width: 90%;
+
+}
+
+.works_large{
+    width: 90%;
+}
+
+.works_small{
+    text-align: center;
+    max-width: 100%;
+}
+
+.works_small img{
+    max-width: 100%;
+}
+
+
+/* ------------作品詳細ページ------------- */
+.detail_img{
+    max-width: 100%;
+    margin-top: 30px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
+}
+
+/* table要素 */
+
+
+.detail_t td {
+    padding: 10px 0px;
+    max-width: 200px;
+}
+
+
+/*----------------フッター---------------*/
+.icon{
+    width: auto;
+    max-width: 12%;
+}
