@@ -2,4 +2,4 @@
 私のポートフォリオサイトです。
 主にデザインやプログラミングの作品をアップしています。  
 
-[サイトはこちら](https://garnier1909.github.io/Portfolio_Website/){:target="_blank" rel="noopener"}
+[サイトはこちら](https://garnier1909.github.io/Portfolio_Website/)
