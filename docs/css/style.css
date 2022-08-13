@@ -57,6 +57,10 @@ table {
     text-align: left;
 }
 
+th{
+    vertical-align: top;
+}
+
 /* ------------------------------
  *        ヘッダー
  *--------------------------------*/
@@ -242,11 +246,12 @@ main {
 }
 
 .profile_t th {
+    padding: 5px 0px;
     font-weight: normal;
     min-width: 80px;
 }
 
-.profile_t td {
+.profile_t td{
     padding: 5px 5px;
     padding-left: 20px;
     min-width: 90px;
@@ -355,11 +360,11 @@ article{
 
 
 .detail_t th {
-    font-weight: normal;
     min-width: 80px;
+    padding: 10px 0px;
 }
 
-.detail_t td {
+.detail_t td{
     padding: 10px 8px;
     padding-left: 20px;
     min-width: 90px;
