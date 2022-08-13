@@ -233,7 +233,7 @@ main {
 }
 
 #left img{
-    margin-left: 20px;
+    margin-left: 40%;
     min-width: 300px;
 }
 
@@ -257,6 +257,16 @@ main {
     margin: 0 auto;
     width: 100%;
     max-width: 1300px;
+}
+
+#table_float{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article{
+    min-width: 50%;
 }
 
 
