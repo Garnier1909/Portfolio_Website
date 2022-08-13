@@ -232,6 +232,11 @@ main {
     margin: 10px;
 }
 
+#left img{
+    margin-left: 20px;
+    min-width: 300px;
+}
+
 .profile_t {
     margin: 20px 0px 50px 0px;
 }
